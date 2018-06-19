@@ -30,9 +30,6 @@ int main()
 {
 	Query_EPS();
 	Query_P2();
-	
-	//send file to Transceiver, need to write this
-	Send2Transceiver(fp);
 }
 
 // QUERY EPS()
@@ -113,6 +110,9 @@ void Query_EPS()
 		fprintf(fp, "Daughterboard Temperature: %f\n", buffer);
 	}
 	
+	//send file to Transceiver, need to write this
+	Send2Transceiver(fp);
+	
 	fclose(fp);
 }
 
@@ -147,5 +147,9 @@ void Query_P2()
 		fprintf(fp, "Value 2: %f\n", value2);
 		fprintf(fp, "Value 3: %f\n", value3);
 	}
+	
+	//send file to Transceiver, need to write this
+	Send2Transceiver(fp);
+	
 	fclose(fp);
 }
