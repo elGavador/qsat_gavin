@@ -1,4 +1,5 @@
 // SunSensor Data-Handler
+// EDIT: This file is trash
 
 #include <iostream>
 #include <errno.h>
